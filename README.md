@@ -105,7 +105,7 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 <meta name="robots" content="index,follow"><!-- Todos los motores de búsqueda -->
 <meta name="googlebot" content="index,follow"><!-- Específico para Google -->
 
-<!-- Infica a Google no mostrar la caja de búsqueda de los enlaces del sitio -->
+<!-- Indica a Google no mostrar la caja de búsqueda de los enlaces del sitio -->
 <meta name="google" content="nositelinkssearchbox">
 
 <!-- Indica a Google no proporcionar una traducción para esta página -->
@@ -132,47 +132,46 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 <!-- Usado para mencionar el programa utilizado para construir el sitio (ej. WordPress, Dreamweaver) -->
 <meta name="generator" content="programa">
 
-<!-- Short description of your site's subject -->
 <!-- Descripción corta del tema de tu sitio -->
 <meta name="subject" content="Tema tratado en el sitio">
 
-<!-- Gives a general age rating based on sites content -->
+<!-- Da una clasificación general de edad basada en el contenido en los sitios -->
 <meta name="rating" content="General">
 
-<!-- Allows control over how referrer information is passed -->
+<!-- Permite control sobre cómo se pasa información referenciada -->
 <meta name="referrer" content="no-referrer">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- Deshabilita la detección automática y formateo de posibles números telefónicos -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Completely opt out of DNS prefetching by setting to 'off' -->
+<!-- Oprtar por la resolución previa de DNS al configurarlo a 'off' -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
-<!-- Stores cookie on the client web browser for client identification -->
+<!-- Almacena cookies en el navegador web del cliente para identificarlo -->
 <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
 
-<!-- Specifies the page to appear in a specific frame -->
+<!-- Indica que la página aparezca en un frame específico -->
 <meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<meta name="geo.region" content="country[-state]"><!-- Código de país (ISO 3166-1): obligatorio, código de estado (ISO 3166-2): opcional; ej. content="US" / content="US-NY" -->
 <meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
 ```
 
-- [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
-- [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
-- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+- [Meta etiquetas que Google entiende](https://support.google.com/webmasters/answer/79812?hl=es)
+- [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions) `(fuente en inglés)`
+- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use) `(fuente en inglés)`
+- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages) `(fuente en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Link
 
 ``` html
-<!-- Points to a CSS stylesheet -->
-<link rel="stylesheet" href="https://example.com/styles.css">
+<!-- Apunta a una hoja de estilo CSS -->
+<link rel="stylesheet" href="https://ejemplo.com/estilos.css">
 
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
@@ -283,7 +282,7 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-### Facebook Instant Articles
+### Facebook Artículos Instantáneos
 
 ``` html
 <meta charset="utf-8">
@@ -354,7 +353,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Browsers / Platforms
+## Navegadores / Plataformas
 
 ### Apple iOS
 
@@ -424,7 +423,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-### Google Chrome Mobile (Android Only)
+### Google Chrome para móviles (solo Android)
 
 Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
@@ -492,9 +491,9 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Browsers (Chinese)
+## Navegadores (Chinos)
 
-### 360 Browser
+### Navegador 360
 
 ``` html
 <!-- select rendering engine in order -->
@@ -503,7 +502,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-### QQ Mobile Browser
+### Navegador Móvil QQ
 
 ``` html
 <!-- Locks the screen into the specified orientation -->
@@ -516,7 +515,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-### UC Mobile Browser
+### Navegador Móvil UC
 
 ``` html
 <!-- Locks the screen into the specified orientation -->
@@ -539,9 +538,9 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Notes
+## Notas
 
-### Performance
+### Rendimiento
 Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
 
 Example:
@@ -552,14 +551,14 @@ Example:
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Other Resources
+## Otros recursos
 
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Related Projects
+## Proyectos relacionados
 
 - [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
 - [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
@@ -568,13 +567,13 @@ Example:
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Other Formats
+## Otros formatos
 
 - [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Translations
+## Tranducciones
 
 - [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
 - [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
@@ -586,7 +585,7 @@ Example:
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Contributing
+## Contribución
 
 **Open an issue or a pull request to suggest changes or additions.**
 
@@ -613,19 +612,19 @@ You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) 
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-### Contributors
+### Contribuidores
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Author
+## Autor
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## License
+## Licencia
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 

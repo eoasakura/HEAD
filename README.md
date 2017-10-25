@@ -1,136 +1,140 @@
 # HEAD
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/eoasakura/HEAD/graphs/contributors)
 
-A list of everything that could go in the `<head>` of your document
+Lista de todo lo que puedes colocar en el `<head>` de tu documento
 
-## Table of Contents
+## Tabla de contenidos
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
+- [Mínimo recomendado](#mínimo-recomendado)
+- [Elementos](#elementos)
 - [Meta](#meta)
 - [Link](#link)
   - [Favicons](#favicons)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
-  - [Facebook Instant Articles](#facebook-instant-articles)
+  - [Facebook Articulos Instantáneos](#facebook-artículos-instantáneos)
   - [Twitter Cards](#twitter-cards)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
-- [Browsers / Platforms](#browsers--platforms)
+- [Navagadores / Plataformas](#navegadores--plataformas)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [Browsers (Chinese)](#browsers-chinese)
-  - [360 Browser](#360-browser)
-  - [QQ Mobile Browser](#qq-mobile-browser)
-  - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
-- [Notes](#notes)
-  - [Performance](#performance)
-- [Other Resources](#other-resources)
-- [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
-- [Translations](#translations)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [Author](#author)
-- [License](#license)
+- [Navegadores (Chinos)](#navegadores-chinos)
+  - [Navegador 360](#navegador-360)
+  - [Navegador Móvil QQ](#navegador-móvil-qq)
+  - [Navegador Móvil UC](#navegador-móvil-uc)
+- [Enlaces a aplicaciones](#enlaces-a-aplicaciones)
+- [Notas](#notas)
+  - [Rendimiento](#rendimiento)
+- [Otros recursos](#otros-recursos)
+- [Proyectos relacionados](#proyectos-relacionados)
+- [Otros formatos](#otros-formatos)
+- [Tranducciones](#tranducciones)
+- [Contribuciones](#contribuciones)
+- [Contribuidores](#contribuidores)
+- [Auor](#autor)
+- [Licencia](#licencia)
 
-## Recommended Minimum
+## Mínimo recomendado
 
-Below are the essential tags for basic, minimalist websites:
+Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 
 ```html
+<!-- Definimos la codificación de caracteres de la página -->
 <meta charset="utf-8">
+<!-- Indicamos si habrá soporte de modo de documento heredado -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Definimos que el sitio tendrá soporte de diseño web responsivo -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Page Title</title>
+<!-- Las 3 meta etiquetas arriba *deben* estar primero en el head; cualquier otro contenido del head debe colocarse *después* de estas etiquetas -->
+<title>Título de la página</title> 
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Elements
+## Elementos
 
 ``` html
-<!-- Document Title -->
-<title>Page Title</title>
+<!-- Título del documento -->
+<title>Título de página</title>
 
-<!-- Base URL to use for all relative URLs contained within the document -->
-<base href="https://example.com/page.html">
+<!-- Dirección base a usar para todas las direcciones relativas contenidas en el documento -->
+<base href="https://ejemplo.com/pagina.html">
 
-<!-- External CSS -->
-<link rel="stylesheet" href="styles.css">
+<!-- Se agrega CSS Externo a la página-->
+<link rel="stylesheet" href="estilos.css">
 
-<!-- In-document CSS -->
+<!-- CSS incrustado en el documento -->
 <style>
-  /* ... */
+  /* ... Estilos aquí*/
 </style>
 
 <!-- JavaScript -->
 <script src="script.js"></script>
-<noscript><!--no JS alternative--></noscript>
+<noscript><!--alternativa que no use JavaScript--></noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Meta
 
 ``` html
-<meta charset="utf-8"> <!-- set character encoding for the document -->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta charset="utf-8"> <!-- Definimos la codificación de caracteres de la página -->
+<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Indicamos si habrá soporte de modo de documento heredado -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Definimos que el sitio tendrá soporte de diseño web responsivo -->
+<!-- Las 3 meta etiquetas arriba *deben* estar primero en el head; cualquier otro contenido del head debe colocarse *después* de estas etiquetas -->
 
-<!-- Allows control over where resources are loaded from -->
+<!-- Permite control sobre el origen desde donde los recursos son cargados -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-<!-- Place as early in the document as possible -->
-<!-- Only applies to content below this tag -->
+<!-- Debe colocarse lo antes posible en el documento -->
+<!-- Solo aplica a contenido debajo de esta etiqueta -->
 
-<!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
+<!-- Nombre de la aplicación web (solo debe usarse si el sitio web es utilizado como aplicación)-->
+<meta name="application-name" content="Nombre de la aplicación">
 
-<!-- Short description of the page (limit to 150 characters) -->
-<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
-<meta name="description" content="A description of the page">
+<!-- Descripción corta de la página (limitado a 150 caracteres) -->
+<!-- En *algunas* situaciones esta descripción es usada como parte del extracto mostrado en los resultados de búsqueda -->
+<meta name="description" content="Descripción de la página">
 
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- Controla el comportamiento de los motores de búsqueda que visitan e indexan el sitio -->
+<meta name="robots" content="index,follow"><!-- Todos los motores de búsqueda -->
+<meta name="googlebot" content="index,follow"><!-- Específico para Google -->
 
-<!-- Tells Google not to show the sitelinks search box -->
+<!-- Infica a Google no mostrar la caja de búsqueda de los enlaces del sitio -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Tells Google not to provide a translation for this page -->
+<!-- Indica a Google no proporcionar una traducción para esta página -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership for Google Search Console -->
+<!-- Verifica pertenencia para la Consola de Búsqueda de Google -->
 <meta name="google-site-verification" content="verification_token">
 
-<!-- Verify ownership for Yandex Webmasters -->
+<!-- Verifica pertenencia para Webmasters Yandex -->
 <meta name="yandex-verification" content="verification_token">
 
-<!-- Verify ownership for Bing Webmaster Center -->
+<!-- Verifica pertenencia para Bing Webmaster Center -->
 <meta name="msvalidate.01" content="verification_token">
 
-<!-- Verify ownership for Alexa Console -->
+<!-- Verifica pertenencia para la Consola Alexa -->
 <meta name="alexaVerifyID" content="verification_token">
 
 <!-- Verify ownership for Pinterest Console-->
 <meta name="p:domain_verify" content="code from pinterest">
 
-<!-- Verify ownership for Norton Safe Web -->
+<!-- Verifica pertenencia para Norton Sage Web -->
 <meta name="norton-safeweb-site-verification" content="norton code">
 
-<!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
-<meta name="generator" content="program">
+<!-- Usado para mencionar el programa utilizado para construir el sitio (ej. WordPress, Dreamweaver) -->
+<meta name="generator" content="programa">
 
 <!-- Short description of your site's subject -->
-<meta name="subject" content="your website's subject">
+<!-- Descripción corta del tema de tu sitio -->
+<meta name="subject" content="Tema tratado en el sitio">
 
 <!-- Gives a general age rating based on sites content -->
 <meta name="rating" content="General">
@@ -162,7 +166,7 @@ Below are the essential tags for basic, minimalist websites:
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Link
 
@@ -239,7 +243,7 @@ Below are the essential tags for basic, minimalist websites:
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Favicons
 
@@ -256,7 +260,7 @@ Below are the essential tags for basic, minimalist websites:
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Social
 
@@ -277,7 +281,7 @@ Below are the essential tags for basic, minimalist websites:
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Facebook Instant Articles
 
@@ -295,7 +299,7 @@ Below are the essential tags for basic, minimalist websites:
 - [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Twitter Cards
 
@@ -312,7 +316,7 @@ Below are the essential tags for basic, minimalist websites:
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Google+ / Schema.org
 
@@ -323,7 +327,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Pinterest
 
@@ -333,7 +337,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### OEmbed
 
@@ -348,7 +352,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 - [oEmbed format](http://oembed.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Browsers / Platforms
 
@@ -382,7 +386,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 - [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Apple Safari
 
@@ -391,7 +395,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Google Android
 
@@ -407,7 +411,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Google Chrome
 
@@ -418,7 +422,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="google" content="notranslate">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Google Chrome Mobile (Android Only)
 
@@ -438,7 +442,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Microsoft Internet Explorer
 
@@ -466,7 +470,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-task-separator" content="1">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## App Links
 
@@ -486,7 +490,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - [App Links Docs](http://applinks.org/documentation/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Browsers (Chinese)
 
@@ -497,7 +501,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### QQ Mobile Browser
 
@@ -510,7 +514,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="x5-page-mode" content="app">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### UC Mobile Browser
 
@@ -533,7 +537,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Notes
 
@@ -546,14 +550,14 @@ Example:
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Other Resources
 
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Related Projects
 
@@ -562,13 +566,13 @@ Example:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Other Formats
 
 - [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Translations
 
@@ -580,7 +584,7 @@ Example:
 - [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 - [Korean](https://github.com/Lutece/HEAD)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Contributing
 
@@ -607,19 +611,19 @@ This branch is responsible for the [\<head> Cheat Sheet](http://gethead.info/) w
 
 You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Author
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## License
 
@@ -627,4 +631,4 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 To the extent possible under law, [Josh Buchea](http://joshbuchea.com) has waived all copyright and related or neighboring rights to this work.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**

@@ -527,32 +527,33 @@ Desde la versión 31 de Chrome, puedes configurar tu aplicación web a "modo apl
 ### Navegador Móvil UC
 
 ``` html
-<!-- Locks the screen into the specified orientation -->
+<!-- Bloquea la pantalla en una orientación específica -->
 <meta name="screen-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+<!-- Despliega la página en modo pantalla completa -->
 <meta name="full-screen" content="yes">
-<!-- UC browser will display images even if in "text mode" -->
+<!-- El navegador UC mostrará imágenes aunque este en "modo texto" -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(fullscreen,forbiding gesture, etc.) -->
+<!-- La página se mostrará en "modo aplicación"(fullscreen,forbiding gesture, etc.) -->
 <meta name="browsermode" content="application">
-<!-- Disabled the UC browser's "night mode" in this page -->
+<!-- Deshabilitar el modo nocturno del navegador UC en esta página -->
 <meta name="nightmode" content="disable">
-<!-- Simplify the page to reduce data transfer -->
+<!-- Simplificar la página para reducir la transferencia de datos -->
 <meta name="layoutmode" content="fitscreen">
-<!-- Disable the UC browser's feature of "scaling font up when there are many words in this page" -->
+<!-- Deshabilitar la función del navegador UC de "escalar la fuente cuando hay muchas palabras en la página"-->
 <meta name="wap-font-scale" content="no">
 ```
 
-- [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+- [Documentación del navegador UC](http://www.uc.cn/download/UCBrowser_U3_API.doc) `(documento en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Notas
 
 ### Rendimiento
-Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
 
-Example:
+Movier el atributo `href` al inicio de un elemento mejora la compresión cuando GZIP está habilitado, el atributo `href` es usado en las etiquetas `a`, `base` y `link`.
+
+Ejemplo:
 
 ``` html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -562,17 +563,17 @@ Example:
 
 ## Otros recursos
 
-- [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
-- [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+- [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md) `(repositorio en inglés)`
+- [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md) `(repositorio en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Proyectos relacionados
 
-- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
-- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
-- [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
-- [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
+- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets `(repositorio en inglés)`
+- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets `(repositorio en inglés)`
+- [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets `(repositorio en inglés)`
+- [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js `(repositorio en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
@@ -584,21 +585,21 @@ Example:
 
 ## Tranducciones
 
-- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- [Italian](https://github.com/Fakkio/HEAD)
-- [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- [Russian/Русский](https://github.com/Konfuze/HEAD)
-- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
-- [Korean](https://github.com/Lutece/HEAD)
+- [Portugués brazileño](https://github.com/Webschool-io/HEAD)
+- [Chino (Simplificado)](https://github.com/Amery2010/HEAD)
+- [Italiano](https://github.com/Fakkio/HEAD)
+- [Japonés](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [Ruso/Русский](https://github.com/Konfuze/HEAD)
+- [Turco/Türkçe](https://github.com/mkg0/HEAD)
+- [Coreano](https://github.com/Lutece/HEAD)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Contribución
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Abre un issue o pull request para sugerencias o agregar contenido.**
 
-### Guide
+### Guía
 
 The **HEAD** repository consists of two branches:
 
@@ -623,7 +624,7 @@ You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) 
 
 ### Contribuidores
 
-Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
+Check out all the super awesome [contributors](https://github.com/eoasakura/HEAD-ES/graphs/contributors).
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 

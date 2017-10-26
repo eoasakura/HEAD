@@ -84,9 +84,12 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 ## Meta
 
 ``` html
-<meta charset="utf-8"> <!-- Definimos la codificación de caracteres de la página -->
-<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Indicamos si habrá soporte de modo de documento heredado -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Definimos que el sitio tendrá soporte de diseño web responsivo -->
+<!-- Definimos la codificación de caracteres de la página -->
+<meta charset="utf-8"> 
+<!-- Indicamos si habrá soporte de modo de documento heredado -->
+<meta http-equiv="x-ua-compatible" content="ie=edge"> 
+<!-- Definimos que el sitio tendrá soporte de diseño web responsivo -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 <!-- Las 3 meta etiquetas arriba *deben* estar primero en el head; cualquier otro contenido del head debe colocarse *después* de estas etiquetas -->
 
 <!-- Permite control sobre el origen desde donde los recursos son cargados -->
@@ -173,73 +176,73 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 <!-- Apunta a una hoja de estilo CSS -->
 <link rel="stylesheet" href="https://ejemplo.com/estilos.css">
 
-<!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+<!-- Ayuda a prevenir problemas con duplicación de contenido -->
+<link rel="canonical" href="https://ejemplo.com/2017/06/9-consejos-para-seo.html">
 
-<!-- Used to be included before the icon link, but is deprecated and no longer is used -->
-<link rel="shortlink" href="https://example.com/?p=42">
+<!-- Usado para ser incluido antes del icono de enlace, pero esta obsoleto y no se utiliza más -->
+<link rel="shortlink" href="https://ejemplo.com/?p=42">
 
-<!-- Links to an AMP HTML version of the current document -->
-<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+<!-- Enlace para la versión HTML AMP del documento actual -->
+<link rel="amphtml" href="https://ejemplo.com/ruta/a/version-amp.html">
 
-<!-- Links to a JSON file that specifies "installation" credentials for web applications -->
+<!-- Enlaces a un archivo JSON que específica las credenciales de "instalación" para aplicaciones web -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Links to the author of the document -->
+<!-- Enlace al autor del documento -->
 <link rel="author" href="humans.txt">
 
-<!-- Refers to a copyright statement that applies to the links context -->
+<!-- Referencia a la declaración de copyright que aplica al contexto del enlace -->
 <link rel="license" href="copyright.html">
 
-<!-- Gives a reference to a location in your document that may be in another language -->
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
+<!-- Proporciona una referencia a la ubicación en tu documento que puede estar en otro lenguaje -->
+<link rel="alternate" href="https://en.ejemplo.com/" hreflang="en">
 
-<!-- Gives information about an author or another person -->
-<link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
-<link rel="me" href="mailto:name@example.com">
+<!-- Proporciona información acerca del autor u otra persona -->
+<link rel="me" href="https://google.com/perfiles/web" type="text/html">
+<link rel="me" href="mailto:nombre@ejemplo.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
-<link rel="archives" href="https://example.com/archives/">
+<!-- Enlaza a un documento que describe una colección de registros, documentos u otros materiales de interés histórico. -->
+<link rel="archives" href="https://ejemplo.com/archivos/">
 
-<!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="https://example.com/">
+<!-- Enlaza a un recurso de alto nivel en una estructura jerarquica -->
+<link rel="index" href="https://ejemplo.com/">
 
-<!-- Gives a self reference - useful when the document has multiple possible references -->
-<link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
+<!-- Proporciona una auto referencia - útil cuando el documento tiene multiples referencias -->
+<link rel="self" type="application/atom+xml" href="https://ejemplo.com/atomFeed.php?pagina=3">
 
-<!-- The first, next, previous, and last documents in a series of documents, respectively -->
-<link rel="first" href="https://example.com/atomFeed.php">
-<link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="prev" href="https://example.com/atomFeed.php?page=2">
-<link rel="last" href="https://example.com/atomFeed.php?page=147">
+<!-- El primero, el siguiente, el anterior y el último documento en una serie de documentos, respectivamente -->
+<link rel="first" href="https://ejemplo.com/atomFeed.php">
+<link rel="next" href="https://ejemplo.com/atomFeed.php?pagina=4">
+<link rel="prev" href="https://ejemplo.com/atomFeed.php?pagina=2">
+<link rel="last" href="https://ejemplo.com/atomFeed.php?pagina=147">
 
-<!-- Used when using a 3rd party service to maintain a blog -->
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+<!-- Usado al utilizar un servicio de terceros para mantener un blog -->
+<link rel="EditURI" href="https://ejemplo.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
-<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
-<link rel="pingback" href="https://example.com/xmlrpc.php">
+<!-- Genera un comentario automatizado cuando otro blog WordPress usa un enlace hacia tu blog o publicación WordPress -->
+<link rel="pingback" href="https://ejemplo.com/xmlrpc.php">
 
-<!-- Notifies a url when you link to it on your site -->
-<link rel="webmention" href="https://example.com/webmention">
+<!-- Notifica a una url cuando la enlazas a tu sitio -->
+<link rel="webmention" href="https://ejemplo.com/webmention">
 
-<!-- Loads in an external HTML file into the current HTML file -->
-<link rel="import" href="/path/to/component.html">
+<!-- Carga un archivo HTML externo en el archivo HTML actual -->
+<link rel="import" href="/ruta/a/componente.html">
 
 <!-- Open Search -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Título de búsqueda">
 
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+<link rel="alternate" href="https://ejemplo.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
-<link rel="dns-prefetch" href="//example.com/">
-<link rel="preconnect" href="https://www.example.com/">
-<link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
+<link rel="dns-prefetch" href="//ejemplo.com/">
+<link rel="preconnect" href="https://www.ejemplo.com/">
+<link rel="prefetch" href="https://www.ejemplo.com/">
+<link rel="prerender" href="https://ejemplo.com/">
 <link rel="preload" href="image.png" as="image">
-<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+<!-- Más información: https://css-tricks.com/prefetching-preloading-prebrowsing/  (fuente en inglés)-->
 ```
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
@@ -247,16 +250,17 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 ### Favicons
 
 ``` html
-<!-- For IE 10 and below -->
-<!-- Place favicon.ico in the root directory - no tag necessary -->
+<!-- Para IE 10 y versiones inferiores -->
+<!-- Coloca el facivon.ico en la raíz del directorio - no requiere etiqueta -->
 
-<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
-<link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
+<!-- Para IE 11, Chrome, Firefox, Safari, Opera -->
+<!-- Se recomienda usar un archivo .PNG sobre un archivo .ico -->
+<link rel="icon" type="image/png" sizes="16x16" href="/ruta/a/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ruta/a/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ruta/a/favicon-96x96.png">
 ```
 
-- [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- [Todo acerca de Favicons (y Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/) `(fuente en inglés)`
 - [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
@@ -267,53 +271,54 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 
 ``` html
 <meta property="fb:app_id" content="123456789">
-<meta property="og:url" content="https://example.com/page.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="">
+<meta property="og:url" content="https://ejemplo.com/pagina.html">
+<meta property="og:type" content="sitio web">
+<meta property="og:title" content="Título del contenido">
+<meta property="og:image" content="https://ejemplo.com/imagen.jpg">
+<meta property="og:description" content="Descripción aquí">
+<meta property="og:site_name" content="Nombre del sitio">
+<meta property="og:locale" content="es_ES">
+<meta property="article:author" content="Autor">
 ```
 
-- [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-- [Open Graph protocol](http://ogp.me/)
+- [Guía para webmasters sobre el uso compartido](https://developers.facebook.com/docs/sharing/webmasters#markup)
+- [Protocolo Open Graph](http://ogp.me/) `(fuente en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Facebook Artículos Instantáneos
 
 ``` html
+<!-- Definimos el juego de caracteres del documento -->
 <meta charset="utf-8">
 <meta property="op:markup_version" content="v1.0">
 
-<!-- The URL of the web version of your article -->
-<link rel="canonical" href="http://example.com/article.html">
+<!-- URL de la versión web de tu artículo -->
+<link rel="canonical" href="http://ejemplo.com/articulo.html">
 
-<!-- The style to be used for this article -->
-<meta property="fb:article_style" content="myarticlestyle">
+<!-- El estilo a utilizar para este artículo -->
+<meta property="fb:article_style" content="miestilodearticulo">
 ```
 
-- [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
+- [Crear un artículo instantáneo](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Ejemplos de código de artículos instantáneos](https://developers.facebook.com/docs/instant-articles/reference)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Twitter Cards
 
 ``` html
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@site_account">
-<meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
-<meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="https://example.com/image.jpg">
+<meta name="twitter:card" content="resumen">
+<meta name="twitter:site" content="@cuenta_del_sitio">
+<meta name="twitter:creator" content="@cuenta_de_creador">
+<meta name="twitter:url" content="https://ejemplo.com/pagina.html">
+<meta name="twitter:title" content="Título del contenido">
+<meta name="twitter:description" content="Descripción del contenido menor a 200 caracteres">
+<meta name="twitter:image" content="https://ejemplo.com/imagen.jpg">
 ```
 
-- [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
-- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- [Twitter Cards: Guía de inicio](https://dev.twitter.com/cards/getting-started) `(fuente en inglés)`
+- [Validador de Twitter Card](https://cards-dev.twitter.com/validator) `(herramienta en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
@@ -321,19 +326,19 @@ Debajo se encuentran las etiquetas esenciales para un sitio web básico:
 
 ``` html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="https://example.com/image.jpg">
+<meta itemprop="name" content="Título del contenido">
+<meta itemprop="description" content="Descripción del contenido menor a 200 caracteres">
+<meta itemprop="image" content="https://ejemplo.com/imagen.jpg">
 ```
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Pinterest
 
-Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
+Pinterest permite prevenir que personas guarden cosas desde tu sitio web,de acuerdo a [su centro de ayuda](https://help.pinterest.com/es/articles/prevent-pinning-your-site). La `descripción` es opcional.
 
 ``` html
-<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+<meta name="pinterest" content="nopin" description="¡Lo sentimos, no puedes guardar desde este sitio!">
 ```
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
@@ -342,14 +347,14 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ``` html
 <link rel="alternate" type="application/json+oembed"
-  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
-  title="oEmbed Profile: JSON">
+  href="http://ejemplo.com/servicios/oembed?url=http%3A%2F%2Fejemplo.com%2Ffoo%2F&amp;format=json"
+  title="Perfil oEmbed: JSON">
 <link rel="alternate" type="text/xml+oembed"
-  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
-  title="oEmbed Profile: XML">
+  href="http://ejemplo.com/servicios/oembed?url=http%3A%2F%2Fejemplo.com%2Ffoo%2F&amp;format=xml"
+  title="Perfil oEmbed: XML">
 ```
 
-- [oEmbed format](http://oembed.com/)
+- [oEmbed format](http://oembed.com/) `(fuente en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
@@ -361,37 +366,37 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Smart App Banner -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- Deshabilita la detección automática y formateo de números telefónicos -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Add to Home Screen -->
+<!-- Agregar a pantalla de inicio -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="App Title">
+<meta name="apple-mobile-web-app-title" content="Título de aplicación">
 
 <!-- Touch Icons -->
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
-<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-<!-- Note: Safari on iOS 7 doesn’t add effects to icons. -->
-<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix. -->
+<!-- En la mayoría de los casos, un touch icon de 180x180px en el head es suficiente -->
+<link rel="apple-touch-icon" href="/ruta/a/apple-touch-icon.png">
+<!-- Nota: Safari en iOS 7 no agrega efectos a los íconos. -->
+<!-- Versiones anteriores de Safari no agregaran efectos a los archivos de iconos nombrados con el sufijo -precompised.png -->
 
-<!-- Startup Image ( Deprecated ) -->
-<link rel="apple-touch-startup-image" href="/path/to/startup.png">
+<!-- Imagen de arranque ( Obsoleto ) -->
+<link rel="apple-touch-startup-image" href="/ruta/a/arranque.png">
 
 <!-- iOS app deep linking -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
-- [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Meta etiquetas Apple](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html) `(fuente en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ### Apple Safari
 
 ```html
-<!-- Pinned Site -->
-<link rel="mask-icon" href="/path/to/icon.svg" color="red">
+<!-- Sitio fijado -->
+<link rel="mask-icon" href="/ruta/a/icono.svg" color="red">
 ```
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
@@ -399,16 +404,20 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ### Google Android
 
 ``` html
+<!-- Define el color de la barra de tareas del dispositivo -->
 <meta name="theme-color" content="#E64545">
 
-<!-- Add to home screen -->
+<!-- Agregar a la pantalla de inicio -->
 <meta name="mobile-web-app-capable" content="yes">
-<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen fuente en inglés -->
 
 <!-- Android app deep linking -->
-<meta name="google-play-app" content="app-id=package-name">
-<link rel="alternate" href="android-app://package-name/http/url-sample.com">
+<meta name="google-play-app" content="app-id=nombre-del-paquete">
+<link rel="alternate" href="android-app://nombre-del-paquete/http/url-ejemplo.com">
 ```
+
+- [Personalización del navegador](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/?hl=es)
+
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
@@ -417,7 +426,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ``` html
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
-<!-- Disable translation prompt -->
+<!-- Deshabilita sugerencia de traducción -->
 <meta name="google" content="notranslate">
 ```
 
@@ -425,21 +434,21 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Google Chrome para móviles (solo Android)
 
-Since Chrome 31, you can set up your web app to "app mode" like Safari.
+Desde la versión 31 de Chrome, puedes configurar tu aplicación web a "modo aplicación" como en Safari.
 
 ``` html
-<!-- Link to a manifest and define the manifest metadata. -->
-<!-- The example of manifest.json could be found in the link below. -->
+<!-- Enlace a manifest define metadatos del manifest. -->
+<!-- Ejemplo de manifest.json puede verse en el enlace debajo. -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Define your web page as a web app -->
+<!-- Define tu página web como una aplicación web -->
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- Homescreen Icon  -->
 <link rel="icon" sizes="192x192" href="highres-icon.png">
 ```
 
-- [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
+- [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen) `(fuente en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
@@ -449,23 +458,23 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+<!-- IE10: Dishabilita el resaltado a enlaces al hacer tap(https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) fuente en inglés -->
 <meta name="msapplication-tap-highlight" content="no">
 
-<!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
-<meta name="application-name" content="Sample Title">
-<meta name="msapplication-tooltip" content="A description of what this site does.">
-<meta name="msapplication-starturl" content="http://example.com/index.html?pinned=true">
+<!-- Sitios fijados (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
+<meta name="application-name" content="Título de ejemplo">
+<meta name="msapplication-tooltip" content="Descripción de lo que el sitio hace.">
+<meta name="msapplication-starturl" content="http://ejemplo.com/index.html?pinned=true">
 <meta name="msapplication-navbutton-color" content="#FF3300">
 <meta name="msapplication-window" content="width=800;height=600">
 <meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
 <meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
-<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://example.com/path/to/file.xml">
+<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://ejemplo.com/ruta/a/archivo.xml">
 <meta name="msapplication-TileColor" content="#FF3300">
-<meta name="msapplication-TileImage" content="/path/to/tileimage.jpg">
+<meta name="msapplication-TileImage" content="/ruta/a/tileimage.jpg">
 
-<meta name="msapplication-config" content="http://example.com/browserconfig.xml">
-<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
+<meta name="msapplication-config" content="http://ejemplo.com/browserconfig.xml">
+<meta name="msapplication-notification" content="frequency=60;polling-uri=http://ejemplo.com/livetile;polling-uri2=http://ejemplo.com/livetile2">
 <meta name="msapplication-task-separator" content="1">
 ```
 
@@ -487,7 +496,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- More info: http://applinks.org/documentation/ -->
 ```
 
-- [App Links Docs](http://applinks.org/documentation/)
+- [App Links Docs](http://applinks.org/documentation/) `(fuente en inglés)`
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
@@ -496,7 +505,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ### Navegador 360
 
 ``` html
-<!-- select rendering engine in order -->
+<!-- seleccionar el orden de motor de renderizado -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
@@ -505,11 +514,11 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ### Navegador Móvil QQ
 
 ``` html
-<!-- Locks the screen into the specified orientation -->
+<!-- Bloquea la pantalla en una orientación específica -->
 <meta name="x5-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+<!-- Despliega la página en modo pantalla completa -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
+<!-- La página se desplegará en "modo aplicación"(fullscreen,etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 

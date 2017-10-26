@@ -585,13 +585,13 @@ Ejemplo:
 
 ## Tranducciones
 
-- [Portugués brazileño](https://github.com/Webschool-io/HEAD)
-- [Chino (Simplificado)](https://github.com/Amery2010/HEAD)
-- [Italiano](https://github.com/Fakkio/HEAD)
-- [Japonés](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- [Ruso/Русский](https://github.com/Konfuze/HEAD)
-- [Turco/Türkçe](https://github.com/mkg0/HEAD)
-- [Coreano](https://github.com/Lutece/HEAD)
+- :brazil: [Portugués brazileño](https://github.com/Webschool-io/HEAD)
+- :cn: [Chino (Simplificado)](https://github.com/Amery2010/HEAD)
+- :it: [Italiano](https://github.com/Fakkio/HEAD)
+- :jp: [Japonés](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- :ru: [Ruso/Русский](https://github.com/Konfuze/HEAD)
+- :tr: [Turco/Türkçe](https://github.com/mkg0/HEAD)
+- :kr: [Coreano](https://github.com/Lutece/HEAD)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
